@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Cy Twombly</title>
+
+    <!-- Google Analytics Tracking Script -->
+    <!-- Loads the Google Analytics tracking script asynchronously -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=cytwombly"></script>
+    <script>
+        // Initializes the Google Analytics data layer
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        // Sends the configuration command to Google Analytics
+        gtag('js', new Date());
+        gtag('config', 'cytwombly');
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1354 858" fill="none">
+        <path d="M1 856C812.2 261.396 -539.8 261.396 271.4 856C1082.6 23.554 -269.4 23.554 541.8 856C1353 -271.698 1 -271.698 812.2 856C1623.4 -284 271.4 -284 1082.6 856C1893.8 265.496 541.8 265.496 1353 856"/>
+      </svg>
+    </div>    
+    <div class="borderone">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1728 127" fill="none">
+        <path d="M0 45.9753C727.144 292.428 1188.5 -129.5 1728 45.9753"/>
+      </svg>
+    </div>
+    <div class="bordertwo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1728 127" fill="none">
+        <path d="M0 45.9753C727.144 292.428 1188.5 -129.5 1728 45.9753"/>
+      </svg>
+    </div>
+    
+    <!-- HORIZONTAL AXIS LABELS -->
+    <div class="labels-container">
+      <div class="label-1">PRINT</div>  
+      <div class="label-2">PHOTOGRAPHY</div>  
+      <div class="label-3">PAINTING</div>  
+      <div class="label-4">DRAWING</div>  
+      <div class="label-5">SCULPTURE</div> 
+    </div> 
+
+    <!-- VERTICAL AXIS LABELS -->
+    <div class="vertical-labels">
+      <div class="label-top">LOVE IT</div>  
+      <div class="label-middle">NEUTRAL</div>  
+      <div class="label-bottom">HATE IT</div>  
+    </div>
+
+    <!-- INTERACTIVE IMAGE LAYER -->
+    <!-- This is where dynamically loaded images will be inserted via JavaScript -->
+    <div class="interactive-container full-viewport-height"></div>
+
+    <!-- CENTER DISPLAY (Detailed Information Popup) -->
+    <!-- This section will appear when a user clicks on an image -->
+    <div class="center-display">
+        <div class="center-content">
+            <!-- Image Wrapper: Holds the main image -->
+            <div class="image-wrapper">
+                <img id="center-image" src="" alt="center image">
+            </div>
+            <!-- Text Background: Holds details about the selected item -->
+            <div class="text-background">
+                <p id="center-title"></p>  <!-- Name of the selected item -->
+                <p id="center-periods"></p>  <!-- Period of the selected item -->
+                <p id="center-mediums"></p>  <!-- Medium of creation -->
+                <p id="center-response"></p>  <!-- Response -->
+            </div>
+        </div>
+    </div>
+
+    <!-- LINKING THE JAVASCRIPT FILE -->
+    <!-- This script will handle fetching and displaying Google Sheets data -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
